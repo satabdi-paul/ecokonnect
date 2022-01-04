@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="512" id="person-default" data-supported-dps="2048x512">
-  <path fill="none" d="M0 0h2048v512H0z"/>
-  <path fill="#dbe7e9" d="M0 0h2048v512H0z"/>
-  <path fill="#bfd3d6" d="M1408 0h640v512h-640z"/>
-  <path d="M1236.29 0H0v512h1236.29a771.52 771.52 0 000-512z" fill="#a0b4b7"/>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
+    <g mask="url(&quot;#SvgjsMask1007&quot;)" fill="none">
+        <rect width="1440" height="560" x="0" y="0" fill="rgba(35, 68, 101, 1)"></rect>
+        <path d="M 0,115 C 57.6,136.2 172.8,230.6 288,221 C 403.2,211.4 460.8,58.8 576,67 C 691.2,75.2 748.8,253.4 864,262 C 979.2,270.6 1036.8,133.2 1152,110 C 1267.2,86.8 1382.4,138.8 1440,146L1440 560L0 560z" fill="rgba(41, 171, 135, 1)"></path>
+        <path d="M 0,355 C 96,378.8 288,488.2 480,474 C 672,459.8 768,291.2 960,284 C 1152,276.8 1344,407.2 1440,438L1440 560L0 560z" fill="rgba(0, 0, 128, 1)"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1007">
+            <rect width="1440" height="560" fill="#ffffff"></rect>
+        </mask>
+    </defs>
 </svg>
