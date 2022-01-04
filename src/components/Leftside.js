@@ -2,55 +2,45 @@ import styled from "styled-components";
 
 const Leftside = (props) => {
   return (
-    <Container>
-      <ArtCard>
-        <UserInfo>
-          <CardBackground />
-          <a>
-            <Photo />
-            <Link>Welcome, there!</Link>
-          </a>
-          <a>
-            <AddPhotoText>Add a photo</AddPhotoText>
-          </a>
-        </UserInfo>
-        <Widget>
-          <a>
-            <div>
-              <span>Connections</span>
-              <span>Grow your network</span>
-            </div>
-            <img src="/images/widget-icon.svg" alt="" />
-          </a>
-        </Widget>
-        <Item>
-          <span>
-            <img src="/images/item-icon.svg" alt="" />
-            My Items
-          </span>
-        </Item>
-      </ArtCard>
-
+    <Container>  
       <CommunityCard>
         <a>
-          <span>Groups</span>
+          <span>Home</span>
         </a>
         <a>
           <span>
-            Events
-            <img src="/images/plus-icon.svg" alt="" />
+            Profile
           </span>
         </a>
         <a>
-          <span>Follow Hashtags</span>
+          <span>Notifications</span>
         </a>
         <a>
-          <span>Discover more</span>
+          <span>Explore</span>
         </a>
+        <a>
+          <span>Messages</span>
+        </a>
+        <a>
+          <span>Saved</span>
+        </a>
+        <a>
+          <span>Offers</span>
+        </a>
+        <a>
+          <span>More</span>
+        </a>
+      </CommunityCard>
+      <CommunityCard>
+      <a href="https://confident-goldstine-04cf4b.netlify.app/index.html">
+        <span>
+        Activities
+          </span></a>
       </CommunityCard>
     </Container>
   );
 };
+
 
 const Container = styled.div`
   grid-area: leftside;
@@ -178,30 +168,29 @@ const CommunityCard = styled(ArtCard)`
   display: flex;
   flex-direction: column;
   a {
-    color: black;
+    color: #4d4d4d;
     padding: 4px 12px 4px 12px;
-    font-size: 12px;
-
+    font-size: 15px;
+    text-decoration:none;
     &:hover {
-      color: #0a66c2;
+      color: #29ab87;
     }
 
     span {
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-
-    &:last-child {
-      color: rgba(0, 0, 0, 0.6);
-      text-decoration: none;
-
-      border-top: 1px solid #d6cec2;
-      padding: 12px;
+      border-bottom: 1px solid #f6f6f6;
+      padding-bottom: 10px;
+      padding-top:5px;
+      padding-left: 10px;
+      font-weight:bold;
       &:hover {
-        background-color: rgba(0, 0, 0, 0.08);
+        color: #29ab87;
       }
     }
+
+    
   }
 `;
 

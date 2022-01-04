@@ -4,40 +4,23 @@ const Rightside = (props) => {
   return (
     <Container>
       <FollowCard>
-        <Title>
-          <h2>Add to your feed</h2>
-          <img src="/images/feed-icon.svg" alt="" />
-        </Title>
-
-        <FeedList>
-          <li>
-            <a>
-              <Avatar />
-            </a>
-            <div>
-              <span>#Linkedin</span>
-              <button>Follow</button>
-            </div>
-          </li>
-          <li>
-            <a>
-              <Avatar />
-            </a>
-            <div>
-              <span>#Video</span>
-              <button>Follow</button>
-            </div>
-          </li>
-        </FeedList>
-
-        <Recommendation>
-          View all recommendations
-          <img src="/images/right-icon.svg" alt="" />
-        </Recommendation>
+      <Search>
+          <div>
+            <input type="text" placeholder="Search Ecotizens" />
+          </div>
+          <SearchIcon>
+            <img src="/images/search-icon.svg" alt="" />
+          </SearchIcon>
+      </Search>
       </FollowCard>
       <BannerCard>
+      <Title>
+          <h2>Advertisements</h2>
+        </Title>
+        <br></br>
         <img
-          src="https://static-exp1.licdn.com/scds/common/u/images/promo/ads/li_evergreen_jobs_ad_300x250_v1.jpg"
+          src="images/ad1.jpeg"
+          width="300" height="400"
           alt=""
         />
       </BannerCard>
@@ -53,7 +36,7 @@ const FollowCard = styled.div`
   text-align: center;
   overflow: hidden;
   margin-bottom: 8px;
-  background-color: #fff;
+  background-color: #29ab87;
   border-radius: 5px;
   position: relative;
   border: none;
@@ -69,38 +52,45 @@ const Title = styled.div`
   width: 100%;
   color: rgba(0, 0, 0, 0.6);
 `;
-
-const FeedList = styled.ul`
-  margin-top: 16px;
-  li {
-    display: flex;
-    align-items: center;
-    margin: 12px 0;
-    position: relative;
-    font-size: 14px;
-    & > div {
-      display: flex;
-      flex-direction: column;
-    }
-
-    button {
-      background-color: transparent;
-      color: rgba(0, 0, 0, 0.6);
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
-      padding: 16px;
-      align-items: center;
-      border-radius: 15px;
-      box-sizing: border-box;
-      font-weight: 600;
-      display: inline-flex;
-      justify-content: center;
-      max-height: 32px;
-      max-width: 480px;
-      text-align: center;
-      outline: none;
+const Search = styled.div`
+  opacity: 1;
+  flex-grow: 1;
+  position: relative;
+  & > div {
+    max-width: 280px;
+    input {
+      border: none;
+      box-shadow: none;
+      background-color: #29ab87;
+      border-radius: 2px;
+      color: #fff;
+      width: 218px;
+      padding: 0 8px 0 40px;
+      line-height: 1.75;
+      font-weight: 400;
+      font-size: 14px;
+      height: 34px;
+      border-color: #dce6f1;
+      vertical-align: text-top;
     }
   }
 `;
+
+const SearchIcon = styled.div`
+  width: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  background-color: #29ab87;
+  left: 2px;
+  border-radius: 0 2px 2px 0;
+  margin: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 
 const Avatar = styled.div`
   background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
@@ -120,10 +110,13 @@ const Recommendation = styled.a`
 `;
 
 const BannerCard = styled(FollowCard)`
+padding:15px;
   img {
-    width: 100%;
-    height: 100%;
+    padding-top:10px;
+    width: 400px;
+    height: 450px;
   }
+  background-color: #fff;
 `;
 
 export default Rightside;

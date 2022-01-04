@@ -13,10 +13,7 @@ const Login = (props) => {
         <a href="/">
           <img src="/images/login-logo.svg" alt="" />
         </a>
-        <div>
-          <Join>Join now</Join>
-          <SignIn>Sign in</SignIn>
-        </div>
+        
       </Nav>
       <Section>
         <Hero>
@@ -115,7 +112,7 @@ const Hero = styled.div`
     padding-bottom: 0;
     width: 55%;
     font-size: 56px;
-    color: #2977c9;
+    color: #29ab87;
     font-weight: 200;
     line-height: 70px;
     @media (max-width: 768px) {
